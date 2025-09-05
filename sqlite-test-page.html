@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">← Back to Home</a>
+        </nav>
+        <h1>SQLite Test Page</h1>
+    </header>
+    
+    <main>
+        <article class="page-content">
+            <h1>SQLite Test Page</h1>
+<p>Welcome to the SQLite Test Page! This page is dedicated to exploring and testing various features of SQLite, a lightweight and powerful relational database management system.</p>
+<h2>What is SQLite?</h2>
+<ul>
+<li>SQLite is an embedded database engine that doesn&#39;t require a separate server process.</li>
+<li>It&#39;s self-contained, easy-to-use, and has zero configuration requirements.</li>
+<li>Ideal for applications that need a small, fast, reliable database engine.</li>
+</ul>
+<h2>Key Features of SQLite</h2>
+<ul>
+<li>ACID-compliant transactions</li>
+<li>Zero-administration</li>
+<li>Cross-platform support</li>
+<li>Embedded in many applications like Firefox, Chrome, and Android</li>
+</ul>
+<h2>Example Code</h2>
+<pre><code class="language-sql">-- Create a table
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE
+);
+
+-- Insert data
+INSERT INTO users (name, email) VALUES (&#39;John Doe&#39;, &#39;john@example.com&#39;);
+
+-- Query data
+SELECT * FROM users;
+</code></pre>
+<h2>Why Use SQLite?</h2>
+<ul>
+<li>Lightweight and fast</li>
+<li>No setup or maintenance required</li>
+<li>Excellent for testing and prototyping</li>
+<li>Small memory footprint</li>
+</ul>
+<h2>Getting Started</h2>
+<ol>
+<li>Download SQLite from the official website: <a href="https://www.sqlite.org/index.html">sqlite.org</a></li>
+<li>Install it on your system</li>
+<li>Start using SQLite in your applications!</li>
+</ol>
+
+        </article>
+        
+        
+    </main>
+    
+    <footer>
+        <p>Last updated: 9/5/2025</p>
+    </footer>
+</body>
+</html>
